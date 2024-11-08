@@ -1,8 +1,11 @@
+import { Router } from "./router";
+import { AuthProvider } from "./context/auth";
+
 function App() {
   return (
-    <>
-      <p className="text-red-500">asd</p>
-    </>
+    <AuthProvider>
+      <Router />
+    </AuthProvider>
   );
 }
 
